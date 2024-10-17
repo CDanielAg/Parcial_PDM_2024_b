@@ -49,3 +49,14 @@ class QuestionFragment {
         }
     }
 }
+
+private fun getSelectedOption(view: View): Int {
+    // Devuelve el ID de la opción seleccionada o -1 si no hay nada seleccionado
+    return when (view.findViewById<RadioGroup>(R.id.radioGroupOptions).checkedRadioButtonId) {
+        R.id.option1 -> 0
+        R.id.option2 -> 1
+        R.id.option3 -> 2
+        R.id.option4 -> 3
+        else -> -1
+    }
+}
