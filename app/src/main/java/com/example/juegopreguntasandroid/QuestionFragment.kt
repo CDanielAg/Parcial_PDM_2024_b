@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.juegopreguntasandroid.R
 
-class QuestionFragment {
+class QuestionFragment : Fragment() {
     private lateinit var viewModel: QuizViewModel
 
     override fun onCreateView(
@@ -48,6 +48,7 @@ class QuestionFragment {
     }
 }
 
+
 private fun getSelectedOption(view: View): Int {
     // Devuelve el ID de la opción seleccionada o -1 si no hay nada seleccionado
     return when (view.findViewById<RadioGroup>(R.id.radioGroupOptions).checkedRadioButtonId) {
@@ -58,3 +59,4 @@ private fun getSelectedOption(view: View): Int {
         else -> -1
     }
 }
+
