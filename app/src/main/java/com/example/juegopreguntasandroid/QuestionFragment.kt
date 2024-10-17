@@ -9,8 +9,6 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModelProvider
-import com.example.juegopreguntasandroid.AnswerFragment
-import com.example.juegopreguntasandroid.QuizViewModel
 import com.example.juegopreguntasandroid.R
 
 class QuestionFragment {
